@@ -27,6 +27,7 @@ How can you add comments in a shell script?
 With a hash (#) becomes comment.
 
 How can you combine multiple strings in a shell?
+Using the += command. 
 
 How can you compare two values in a shell?
 
