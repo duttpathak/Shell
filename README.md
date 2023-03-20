@@ -30,6 +30,7 @@ How can you combine multiple strings in a shell?
 Using the += command. 
 
 How can you compare two values in a shell?
+Using the == command. 
 
 Describe at least two commands for printing shell output. 
 
