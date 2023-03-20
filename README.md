@@ -17,8 +17,11 @@ What are the disadvantages of a shell script?
 The process is slow initially and improves gradually. 
 
 What are the different type of shell variables?
+System-defined variables and user-defined variables. 
 
 How can you delete and declare shell variables?
+To declare use (export "variable name")
+To delete use (unset filename)
 
 How can add comments in a shell script?
 
