@@ -23,7 +23,8 @@ How can you delete and declare shell variables?
 To declare use (export "variable name")
 To delete use (unset filename)
 
-How can add comments in a shell script?
+How can you add comments in a shell script?
+With a hash (#) becomes comment.
 
 How can you combine multiple strings in a shell?
 
