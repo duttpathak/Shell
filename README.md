@@ -43,10 +43,10 @@ What are command line arguments in a shell?
 What is a weakly typed language? Does bash fall under this category?
 Weakly typed languages have variables that are less tightly coupled to a specific type. variables can be implicitly converted to other data types to permit particular operations which otherwise can not happen. Bash is strong typed language. JavaScript is weakly typed language. 
 
-> var intNumbers = 123
-> var textNumbers = "one two three"
-> intNumbers + textNumbers
-< "123one two three"
+var intNumbers = 123
+var textNumbers = "one two three"
+ intNumbers + textNumbers
+ "123one two three"
 
 How can you declare and access an array variable in a shell?
 Indexed arrays - store elements what an index starting from 0
@@ -87,8 +87,27 @@ if (myDay == " Sunny")
       Console.WriteLine("Read in the Garden")
     }
 
- What is a loop in programming? Provide an example of each in the shell of your liking. 
+What is a loop in programming? Provide an example of each in the shell of your liking. 
 
+Loops are series of commands that rerun until a particular situation is reached. Useful for automating repetitive tasks. 
+Using bash 
+-While loop
+while [ <some test> ]
+do
+<commands>
+done
+-Until loop 
+until [ <some test> ]
+do
+<commands>
+done
+-For loop 
+for var in <list>
+do
+<commands>
+done
+-Controlling loops 
+Breaks and continue (some files may not have access to read, so continue on to next. Sometimes the disk space get's below a certain level, so it stops/breaks)
 How can you check if a file exists (or not) in a shell?
 
 How can you check if a directory exists (to not) in a shell?
