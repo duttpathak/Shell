@@ -68,6 +68,25 @@ unset index_array[1]
 
 What is a conditional statement in programming? Provide an example of each in the shell of your liking. 
 
+Using C++ syntax  
+if (myDay == " Sunny")
+    {
+      // Decision
+      Console.WriteLine("Read in the Library");
+    }
+    // 2nd condition
+    else if (myday == "Raining")
+    {
+      //decision
+      Console.WriteLine("Read at Home")
+    }
+    // 3rd condition
+    else if (MyDay == "Cloudy")
+    {
+      // Decision
+      Console.WriteLine("Read in the Garden")
+    }
+
  What is a loop in programming? Provide an example of each in the shell of your liking. 
 
 How can you check if a file exists (or not) in a shell?
