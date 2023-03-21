@@ -33,6 +33,8 @@ How can you compare two values in a shell?
 Using the == command. 
 
 Describe at least two commands for printing shell output. 
+echo "Hello Work!"
+printf "Hello world\n" (\n FORMAT controls teh output as in C printf. \n is use to print new line.)
 
 How can you take user input in a shell script? 
 
