@@ -129,6 +129,7 @@ Breaks and continue (some files may not have access to read, so continue on to n
 21 How can a shell script be terminated?
 
 22 How can you make a shell script executable?
+
 #!/bin/bash command used to make it executable. 
 
 23 Describe five different file options. E.g., “-L“ checks if a file exists and is a symbolic link.
@@ -154,6 +155,7 @@ prog3
 
 27 What is an environment variable? How can you declare one?
 variables and constants 
+
 Environmental variables are dynamic values which affect thte processes or programs on a computer. They exist in every operating system, but types may vary. Environment variables can be created, edited, saved, and deleted and give information about the system behavior. 
 
 28 Write a shell script to print the HOME environment variable. 
