@@ -154,15 +154,21 @@ prog3
 
 27 What is an environment variable? How can you declare one?
 variables and constants 
-Environmental variables are represented by letters that take on values which are subject to change the output. 
+Environmental variables are dynamic values which affect thte processes or programs on a computer. They exist in every operating system, but types may vary. Environment variables can be created, edited, saved, and deleted and give information about the system behavior. 
 
 28 Write a shell script to print the HOME environment variable. 
+
+echo $HOME
 
 29 How can you debug (or troubleshoot) a problem with a shell script?
 
 30 What is the purpose of the exit status of a shell command?
 
+Exit status is an integer number. 0 exit status means the command was successful without any errors. A non-zero (1-255 values) exit status means command was a failure. 
+
 31 Write a shell script to print the exit status of a command. 
+
+echo $?
 
 
 
