@@ -30,7 +30,19 @@ Since every command creates a new process, Shell scripts are slow as comparted t
 
 7 What are the different type of shell variables?
 
-System-defined variables and user-defined variables. 
+```
+
+System-defined variables (environmental variables)
+
+Examples: 	echo $HOME
+
+User-defined variables. 
+Syntax:
+Variable_name=variable_value
+(Don’t use space on either side of ‘=’ sign)
+Example: a=5
+
+```
 
 8 How can you delete and declare shell variables?
 
