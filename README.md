@@ -8,11 +8,17 @@ Bourne Shell (sh), C Shell (csh), TENEX C Shell (tcsh), KornShell (ksh), Debian 
 
 3 Describe five different shell commands and their usage?
 
-cd (change directories), ls (list files in current directory), mv (move file), mkdir (make empty directory), rm (remove one or more file).
+```
+cd (change directories) 
+ls (list files in current directory)
+mv (move file), mkdir (make empty directory)
+rm (remove one or more file).
 
-4 What is a shell script?
+```
 
-A text file containing a sequence of commands for a UNIX-based OS. 
+4 What is a shell script? What is the file extention for a shell script?
+
+A text file containing a sequence of commands for a UNIX-based OS and Linux OS.  
 
 5 What are the advantages of a shell script?
 
@@ -20,7 +26,7 @@ Usefull for repetitive tasks that may be time consuming to execute by typing one
 
 6 What are the disadvantages of a shell script?
 
-The process is slow initially and improves gradually. 
+Since every command creates a new process, Shell scripts are slow as comparted to compiled programs. Shell scrips are slow because every line creates a new process in the OS and when executing the program it runs as a single process. 
 
 7 What are the different type of shell variables?
 
@@ -29,7 +35,7 @@ System-defined variables and user-defined variables.
 8 How can you delete and declare shell variables?
 
 To declare use (export "variable name")
-To delete use (unset filename)
+To delete use (unset varialbe_name)
 
 9 How can you add comments in a shell script?
 
@@ -38,6 +44,16 @@ With a hash (#) becomes comment.
 10 How can you combine multiple strings in a shell?
 
 Using the += command. 
+
+```
+
+mystring="I would like to generate a meaningful output, please. "
+mystring+="Not a chance, friend!"
+echo "$mystring"
+
+output = I would like to generate a meaningful output, please. Not a chance, friend!
+
+```
 
 11 How can you compare two values in a shell?
 
@@ -48,9 +64,17 @@ Using the == command.
 echo "Hello Work!"
 printf "Hello world\n" (\n FORMAT controls teh output as in C printf. \n is use to print new line.)
 
-13 How can you take user input in a shell script? 
+13 How can you take user input in a shell script?
+
+```
+echo "Enter Your Name: "
+read my_var
+echo "Welcome ${my_var}!"
+```
 
 14 What are command line arguments in a shell?
+
+Command-line arguments are parameters that are passed to a script while executing them in the bash shell. 
 
 15 What is a weakly typed language? Does bash fall under this category?
 
@@ -105,6 +129,7 @@ if (myDay == " Sunny")
 
 Loops are series of commands that rerun until a particular situation is reached. Useful for automating repetitive tasks. 
 Using bash 
+```
 -While loop
 while [ <some test> ]
 do
@@ -120,17 +145,28 @@ for var in <list>
 do
 <commands>
 done
+
+```
 -Controlling loops 
 Breaks and continue (some files may not have access to read, so continue on to next. Sometimes the disk space get's below a certain level, so it stops/breaks)
+
 19 How can you check if a file exists (or not) in a shell?
 
 20 How can you check if a directory exists (to not) in a shell?
 
-21 How can a shell script be terminated?
+DIR=/tmp/downloads
+if [ -d "$DIR" ];
+then
+    echo "$DIR directory exists."
+else
+	echo "$DIR directory does not exist."
+fi
+
+21 How can a shell script be terminated? Force terminate 
 
 22 How can you make a shell script executable?
 
-#!/bin/bash command used to make it executable. 
+bash filename.zsh 
 
 23 Describe five different file options. E.g., “-L“ checks if a file exists and is a symbolic link.
 
@@ -143,26 +179,49 @@ replace x with the line number and file_name with file name
 
 25 How can you find the length of a string in the shell?
 
+```
 str="this is a string"
 n=${#str}
 echo "Length of the string is : $n "
+```
 
 26 How can you run multiple shell scripts in parallel?
-prog1 &
-prog2 &
-wait
-prog3
+
+./script1.sh && ./script2.sh (second script runs only when first has error)
 
 27 What is an environment variable? How can you declare one?
+
 variables and constants 
 
 Environmental variables are dynamic values which affect thte processes or programs on a computer. They exist in every operating system, but types may vary. Environment variables can be created, edited, saved, and deleted and give information about the system behavior. 
 
 28 Write a shell script to print the HOME environment variable. 
 
+```
+create a file using vscode (directory.zsh)
+Start the script with #! /bin/zsh
+Write some code 
+Save the script file as filename.zsh
+
 echo $HOME
 
+```
+
 29 How can you debug (or troubleshoot) a problem with a shell script?
+
+#!/bin/bash
+
+read -p "Enter the input: " val
+zero_val=0
+if [ "$val" -gt "$zero_val" ]
+then
+   echo "Positive number entered."
+else
+   echo "The input value is not positive."
+fi
+
+ bash -n ./filename.zsh (this command will tell if you the script has any bugs)
+
 
 30 What is the purpose of the exit status of a shell command?
 
@@ -176,7 +235,10 @@ echo $?
 
 
 
+Process is anything executing at a given time 
+CPU, storage, memory, Unix and linux
 
+Process will execuate until you stop 
 
 
 Do a pull request in github (put it in )
