@@ -34,8 +34,10 @@ System-defined variables and user-defined variables.
 
 8 How can you delete and declare shell variables?
 
+```
 To declare use (export "variable name")
 To delete use (unset varialbe_name)
+```
 
 9 How can you add comments in a shell script?
 
