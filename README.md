@@ -89,8 +89,12 @@ var textNumbers = "one two three"
 
 16 How can you declare and access an array variable in a shell?
 
+
 Indexed arrays - store elements what an index starting from 0
+
 associative arrays - store elements in key-value pairs
+
+```
 
 declare -a indexed_array
 indexed_array[0]=value
@@ -105,6 +109,7 @@ assoc_array[key]=value
 To delete 
 unset index_array[1]
 
+```
 
 17 What is a conditional statement in programming? Provide an example of each in the shell of your liking. 
 
