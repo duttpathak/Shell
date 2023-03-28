@@ -189,7 +189,7 @@ fi
 
 22 How can you make a shell script executable?
 
-bash filename.zsh 
+sh filename.sh 
 
 23 Describe five different file options. E.g., “-L“ checks if a file exists and is a symbolic link.
 
