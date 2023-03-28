@@ -173,6 +173,8 @@ Breaks and continue (some files may not have access to read, so continue on to n
 
 20 How can you check if a directory exists (to not) in a shell?
 
+```
+
 DIR=/tmp/downloads
 if [ -d "$DIR" ];
 then
@@ -180,6 +182,8 @@ then
 else
 	echo "$DIR directory does not exist."
 fi
+
+```
 
 21 How can a shell script be terminated? Force terminate 
 
