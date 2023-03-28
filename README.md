@@ -34,7 +34,7 @@ Since every command creates a new process, Shell scripts are slow as comparted t
 
 System-defined variables (environmental variables)
 
-Examples: echo $HOME
+Example: echo $HOME
 
 User-defined variables. 
 Syntax:
