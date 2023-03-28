@@ -258,11 +258,12 @@ Exit status is an integer number. 0 exit status means the command was successful
 
 31 Write a shell script to print the exit status of a command. 
 
+```
+
+#!/bin/zsh
 echo $?
 
-
-
-
+```
 
 Process is anything executing at a given time 
 CPU, storage, memory, Unix and linux
