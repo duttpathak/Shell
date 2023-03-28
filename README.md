@@ -234,17 +234,23 @@ echo $HOME
 
 #!/bin/bash
 
+```
+
 read -p "Enter the input: " val
 zero_val=0
+set -x
 if [ "$val" -gt "$zero_val" ]
 then
    echo "Positive number entered."
 else
    echo "The input value is not positive."
 fi
+set +x
+echo "Script Ended"
 
- bash -n ./filename.zsh (this command will tell if you the script has any bugs)
+Set -x runs the first part of the script, so the user can find the exact bug 
 
+```
 
 30 What is the purpose of the exit status of a shell command?
 
