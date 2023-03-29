@@ -180,7 +180,6 @@ Breaks and continue (some files may not have access to read, so continue on to n
 20 How can you check if a directory exists (to not) in a shell?
 
 ```
-
 DIR=/tmp/downloads
 if [ -d "$DIR" ];
 then
@@ -203,7 +202,11 @@ chmod +x filename.sh
 
 -d from 20 (five options and explain)
 
-regular, directory, symbolic link, FIFO special, block special. 
+-f: Returns True if the file exists as a common (regular) file. 
+-d: Returns True if directory exists. 
+-e: Returns True if any type of file exists. 
+-c: Returns True if the character file exists. 
+-r: Returns True if a readable file exists. 
 
 24 How can you print a particular line inside an existing file in the shell?
 
