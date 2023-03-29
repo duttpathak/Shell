@@ -11,7 +11,8 @@ Bourne Shell (sh), C Shell (csh), TENEX C Shell (tcsh), KornShell (ksh), Debian 
 ```
 cd (change directories) 
 ls (list files in current directory)
-mv (move file), mkdir (make empty directory)
+mv (move file) 
+mkdir (make empty directory)
 rm (remove one or more file).
 
 ```
@@ -26,7 +27,7 @@ Usefull for repetitive tasks that may be time consuming to execute by typing one
 
 6 What are the disadvantages of a shell script?
 
-Since every command creates a new process, Shell scripts are slow as comparted to compiled programs. Shell scrips are slow because every line creates a new process in the OS and when executing the program it runs as a single process. 
+Since every command creates a new process, Shell scripts are slow as compared to compiled programs. Shell scrips are slow because every line creates a new process in the OS and when executing the program it runs as a single process. 
 
 7 What are the different type of shell variables?
 
@@ -48,7 +49,7 @@ Example: a=5
 
 ```
 To declare use (export "variable name")
-To delete use (unset varialbe_name)
+To delete use (unset "variable name")
 ```
 
 9 How can you add comments in a shell script?
@@ -62,12 +63,14 @@ Using the += command.
 ```
 
 mystring="I would like to generate a meaningful output, please. "
-mystring+="Not a chance, friend!"
+mystring+"Not a chance, friend!"
 echo "$mystring"
 
 output = I would like to generate a meaningful output, please. Not a chance, friend!
 
 ```
+
+echo "string  1 + string 2"
 
 11 How can you compare two values in a shell?
 
@@ -89,6 +92,8 @@ echo "Welcome ${my_var}!"
 14 What are command line arguments in a shell?
 
 Command-line arguments are parameters that are passed to a script while executing them in the bash shell. 
+
+provide example
 
 15 What is a weakly typed language? Does bash fall under this category?
 
@@ -165,6 +170,7 @@ do
 <commands>
 done
 
+fix some test, say while, until loop, and for loop 
 ```
 -Controlling loops 
 Breaks and continue (some files may not have access to read, so continue on to next. Sometimes the disk space get's below a certain level, so it stops/breaks)
@@ -184,21 +190,28 @@ else
 fi
 
 ```
+fix indentation 
 
-21 How can a shell script be terminated? Force terminate 
+21 How can a shell script be terminated? Forcely exit  
 
 22 How can you make a shell script executable?
 
-sh filename.sh 
+chmod +x filename.sh
+
 
 23 Describe five different file options. E.g., “-L“ checks if a file exists and is a symbolic link.
+
+-d from 20 (five options and explain)
 
 regular, directory, symbolic link, FIFO special, block special. 
 
 24 How can you print a particular line inside an existing file in the shell?
 
+```
 head -x file_name | tail +x
 replace x with the line number and file_name with file name
+
+```
 
 25 How can you find the length of a string in the shell?
 
@@ -236,19 +249,7 @@ echo $HOME
 
 ```
 
-read -p "Enter the input: " val
-zero_val=0
-set -x
-if [ "$val" -gt "$zero_val" ]
-then
-   echo "Positive number entered."
-else
-   echo "The input value is not positive."
-fi
-set +x
-echo "Script Ended"
 
-Set -x runs the first part of the script, so the user can find the exact bug 
 
 ```
 
