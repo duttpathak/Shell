@@ -212,7 +212,6 @@ chmod +x filename.sh
 
 23 Describe five different file options. E.g., “-L“ checks if a file exists and is a symbolic link.
 
--d from 20 (five options and explain)
 
 ```
 
