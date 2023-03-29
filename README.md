@@ -202,11 +202,15 @@ chmod +x filename.sh
 
 -d from 20 (five options and explain)
 
+```
+
 -f: Returns True if the file exists as a common (regular) file. 
 -d: Returns True if directory exists. 
 -e: Returns True if any type of file exists. 
 -c: Returns True if the character file exists. 
 -r: Returns True if a readable file exists. 
+
+```
 
 24 How can you print a particular line inside an existing file in the shell?
 
