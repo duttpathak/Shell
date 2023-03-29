@@ -177,6 +177,18 @@ Breaks and continue (some files may not have access to read, so continue on to n
 
 19 How can you check if a file exists (or not) in a shell?
 
+```
+
+FILE=/tmp/downloads
+if [ -f "$File" ];
+then
+    echo "$File exists."
+else
+	echo "$File does not exist."
+fi
+
+```
+
 20 How can you check if a directory exists (to not) in a shell?
 
 ```
