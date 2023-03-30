@@ -19,7 +19,12 @@ rm (remove one or more file).
 
 4 What is a shell script? What is the file extention for a shell script?
 
-A text file containing a sequence of commands for a UNIX-based OS and Linux OS.  
+```
+
+A text file containing a sequence of commands for a UNIX-based OS and Linux OS. 
+.sh(Bourne or Korn shell) or.csh(C shell).
+
+```
 
 5 What are the advantages of a shell script?
 
@@ -34,33 +39,44 @@ Since every command creates a new process, Shell scripts are slow as compared to
 ```
 
 System-defined variables (environmental variables)
-
 Example: echo $HOME
 
-User-defined variables. 
-Syntax:
-Variable_name=variable_value
-(Don’t use space on either side of ‘=’ sign)
-Example: a=5
+HOME (It contains location of the home directory of the user
+cd<Enter> command will always take the user to home whose value is stored in this variable)
+PATH (It contains the list of path name of directories separated with colon ‘:’ These directories are searched for an executable program. The directories are searched in the same order as specified in the variable).
+PS1 (It contains the shell prompt settings)
+SHELL (It stores the default shell of the user)
+
+User-defined variables.
+Example: var=3
+		 echo ${var}rd
+Output:  3rd
 
 ```
 
 8 How can you delete and declare shell variables?
 
 ```
+
 To declare use (export "variable name")
 To delete use (unset "variable name")
+
 ```
 
 9 How can you add comments in a shell script?
 
+```
+
 With a hash (#) becomes comment.
+
+```
 
 10 How can you combine multiple strings in a shell?
 
+```
+
 Using the += command. 
 
-```
 
 mystring="I would like to generate a meaningful output, please. "
 mystring+"Not a chance, friend!"
@@ -207,13 +223,14 @@ fix indentation
 
 22 How can you make a shell script executable?
 
-chmod +x filename.sh
+chmod +x <filename.sh>
 
 
 23 Describe five different file options. E.g., “-L“ checks if a file exists and is a symbolic link.
 
 
 ```
+#-d from 20 (five options and explain)
 
 -f: Returns True if the file exists as a common (regular) file. 
 -d: Returns True if directory exists. 
@@ -291,3 +308,6 @@ Process will execuate until you stop
 
 
 Do a pull request in github (put it in )
+
+Temperory (memory) and permanent (hard disk) space 
+CPU is responsible for extract, decode, and execute 
