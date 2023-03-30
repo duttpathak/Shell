@@ -90,7 +90,11 @@ echo "string  1 + string 2"
 
 11 How can you compare two values in a shell?
 
+```
+
 Using the == command. 
+
+```
 
 12 Describe at least two commands for printing shell output.
 
