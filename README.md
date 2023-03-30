@@ -153,9 +153,10 @@ associative arrays - store elements in key-value pairs
 declare -a indexed_array
 indexed_array[0]=value
 index_array=(1 2 3 4 5 6)
-echo ${index_array[0]} will print individual elements
-echo ${assoc_array[@]} will print all the elements
-echo ${#index_array[@]} will count the number of elements in an array
+echo ${index_array[0]} #will print individual elements
+declare -A assoc_array
+echo ${assoc_array[@]} #will print all the elements
+echo ${#index_array[@]} #will count the number of elements in an array
 OR
 declare -A assoc_array
 assoc_array[key]=value
@@ -164,6 +165,8 @@ To delete
 unset index_array[1]
 
 ```
+
+review 
 
 17 What is a conditional statement in programming? Provide an example of each in the shell of your liking. 
 
@@ -221,7 +224,7 @@ if [ -f "$File" ];
 then
     echo "$File exists."
 else
-	echo "$File does not exist."
+    echo "$File does not exist."
 fi
 
 ```
