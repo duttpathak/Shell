@@ -241,7 +241,6 @@ else
 fi
 
 ```
-fix indentation 
 
 21 How can a shell script be terminated? Forcely exit  
 
