@@ -50,7 +50,7 @@ SHELL (It stores the default shell of the user)
 
 User-defined variables.
 Example: var=3
-		 echo ${var}rd
+         echo ${var}rd
 Output:  3rd
 
 ```
