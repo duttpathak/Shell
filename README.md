@@ -219,12 +219,12 @@ Breaks and continue (some files may not have access to read, so continue on to n
 
 ```
 
-FILE=/tmp/downloads
-if [ -f "$File" ];
+file=/tmp/downloads
+if [ -f "$file" ];
 then
-    echo "$File exists."
+    echo "$file exists."
 else
-    echo "$File does not exist."
+    echo "$file does not exist."
 fi
 
 ```
@@ -237,7 +237,7 @@ if [ -d "$DIR" ];
 then
     echo "$DIR directory exists."
 else
-	echo "$DIR directory does not exist."
+    echo "$DIR directory does not exist."
 fi
 
 ```
