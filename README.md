@@ -47,6 +47,8 @@ PATH (It contains the list of path name of directories separated with colon ‘:
 PS1 (It contains the shell prompt settings)
 SHELL (It stores the default shell of the user)
 
+```
+
 User-defined variables.
 Example: var=3
 		 echo ${var}rd
@@ -108,8 +110,12 @@ Using the == command.
 
 12 Describe at least two commands for printing shell output.
 
+```
+
 echo "Hello Work!"
-printf "Hello world\n" (\n FORMAT controls teh output as in C printf. \n is use to print new line.)
+printf "Hello world\n" (\n FORMAT controls the output as in C printf. \n is use to print new line.)
+
+```
 
 13 How can you take user input in a shell script?
 
