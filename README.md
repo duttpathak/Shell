@@ -13,7 +13,7 @@ cd (change directories) (ex. cd code)
 ls (list files in current directory) (ex. ls)
 mv (move file) (mv <file/directory> to <file/directory>)
 mkdir (make empty directory) (mkdir <filename>)
-rm (remove one or more file). (<rm filename>)
+rm (remove one or more file) (rm <filename>)
 
 ```
 
