@@ -9,7 +9,7 @@ Bourne Shell (sh), C Shell (csh), TENEX C Shell (tcsh), KornShell (ksh), Debian 
 3 Describe five different shell commands and their usage?
 
 ```
-cd (change directories) (ex. cd code)
+cd (change directories) (ex. cd <directory>)
 ls (list files in current directory) (ex. ls)
 mv (move file) (mv <file/directory> to <file/directory>)
 mkdir (make empty directory) (mkdir <filename>)
