@@ -111,7 +111,8 @@ Using the == command.
 ```
 
 echo "Hello Work!"
-printf "Hello world\n" (\n FORMAT controls the output as in C printf. \n is use to print new line.)
+printf "Hello world\n" 
+(\n FORMAT controls the output as in C printf. \n is use to print new line.)
 
 ```
 
