@@ -11,7 +11,7 @@ Bourne Shell (sh), C Shell (csh), TENEX C Shell (tcsh), KornShell (ksh), Debian 
 ```
 cd (change directories) (ex. cd <directory>)
 ls (list files in current directory) (ex. ls)
-mv (move file) (mv <file/directory> to <file/directory>)
+mv (move file) (mv <file/directory>  <file/directory>)
 mkdir (make empty directory) (mkdir <filename>)
 rm (remove one or more file) (rm <filename>)
 
@@ -75,6 +75,7 @@ With a hash (#) becomes comment.
 
 ```
 
+Example 1
 Using the += command. 
 
 mystring="I would like to generate a meaningful output, please. "
@@ -83,6 +84,7 @@ echo "$mystring"
 
 output = I would like to generate a meaningful output, please. Not a chance, friend!
 
+Example 2
 #Declare first string
 string1="Welcome"
 #Declare second string
