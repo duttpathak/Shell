@@ -84,6 +84,8 @@ echo "$mystring"
 
 output = I would like to generate a meaningful output, please. Not a chance, friend!
 
+echo "string  1 + string 2"
+
 Example 2
 #Declare first string
 string1="Welcome"
@@ -97,8 +99,6 @@ echo "$string3 to our site"
 output = Welcome everyone  to our site
 
 ```
-
-echo "string  1 + string 2"
 
 11 How can you compare two values in a shell?
 
