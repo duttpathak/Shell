@@ -79,7 +79,7 @@ Using the += command.
 
 
 mystring="I would like to generate a meaningful output, please. "
-mystring+"Not a chance, friend!"
+mystring+="Not a chance, friend!"
 echo "$mystring"
 
 output = I would like to generate a meaningful output, please. Not a chance, friend!
