@@ -59,7 +59,6 @@ Output:  3rd
 8 How can you delete and declare shell variables?
 
 ```
-
 To declare use (export "variable name")
 To delete use (unset "variable name")
 
