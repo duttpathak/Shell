@@ -47,7 +47,6 @@ PATH (It contains the list of path name of directories separated with colon ‘:
 PS1 (It contains the shell prompt settings)
 SHELL (It stores the default shell of the user)
 
-```
 
 User-defined variables.
 Example: var=3
