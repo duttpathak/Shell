@@ -155,14 +155,18 @@ Exit code for the script: 0
 
 15 What is a weakly typed language? Does bash fall under this category?
 
-A weakly typed language has looser typing rules and may produce unpredictable or even enourmous results or may perform implicit type conversion at runtime. Bash is strong typed language. JavaScript is weakly typed language. 
+Weakly typed languages, data types do not have to be explicitly called. In weakly typed languages, once a type is assigned to a variable say at run-time or compile-time, it can be intermingled in expressions with other types easily. Bash is strong typed language. JavaScript is weakly typed language. 
 
 ```
+Weakly typed example in Javascript 
+$data = “string1”        //Type assigned as str at runtime
+$data = 5                //Type assigned as int at runtime
+$data = $data+“string2”  //str and int get concatenated
 
-var intNumbers = 123
-var textNumbers = "one two three"
- intNumbers + textNumbers
- "123one two three"
+Strongly typed example in Python
+data = “string1”         //Type assigned as str at runtime
+data = 5                 //Type assigned as int at runtime
+data = data + “string2”  //Type-error str and int can’t be concatenated
 
 ```
 
