@@ -331,6 +331,10 @@ chmod +x <filename.sh>
 ```
 head -x file_name | tail +x
 replace x with the line number and file_name with file name
+or
+sed -n '10p' file.txt 
+
+-n suppresses the output while p command prints specific line. Replace 10 with line you want to print. 
 
 ```
 
