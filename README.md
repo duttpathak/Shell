@@ -113,8 +113,7 @@ Using the == command.
 ```
 
 echo "Hello Work!"
-printf "Hello world\n" 
-(\n FORMAT controls the output as in C printf. \n is use to print new line.)
+printf "Hello world" 
 
 ```
 
@@ -141,29 +140,39 @@ var textNumbers = "one two three"
  intNumbers + textNumbers
  "123one two three"
 
+ reword
+
 16 How can you declare and access an array variable in a shell?
 
 
-Indexed arrays - store elements what an index starting from 0
+Indexed arrays - store elements with an index starting from 0
 
 associative arrays - store elements in key-value pairs
 
 ```
 
 declare -a indexed_array
+
 indexed_array[0]=value
 index_array=(1 2 3 4 5 6)
 echo ${index_array[0]} #will print individual elements
+echo ${index_array[@]} #will count the number of elements in an array
+echo ${assoc_array[@]}
 declare -A assoc_array
-echo ${assoc_array[@]} #will print all the elements
-echo ${#index_array[@]} #will count the number of elements in an array
+
+assoc_array[key]=value
+OR
+declare -a indexed_array
+indexed_array[0]=value
+
+
+
 OR
 declare -A assoc_array
-assoc_array[key]=value
 
-To delete 
-unset index_array[1]
 
+declare -A assoc_array
+echo ${assoc_array[@]} #will print all the elements
 ```
 
 review 
