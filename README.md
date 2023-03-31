@@ -197,9 +197,9 @@ Loops are series of commands that rerun until a particular situation is reached.
 Using bash 
 ```
 -While loop
-while [ <some test> ]
+while [ <some test>]
 do
-<commands>
+    <commands>
 done
 -Until loop 
 until [ <some test> ]
@@ -212,7 +212,40 @@ do
 <commands>
 done
 
-fix some test, say while, until loop, and for loop 
+Examples:
+-While loop
+
+counter=1 #initialise the variable counter with it's starting value.
+while [ $counter -le 10 ] #counter is less than or equal to 10
+do
+    echo $counter #Here echo is being used as it's an easy way to illustrate what is going on.
+    ((counter++)) #Using the double brackets we can increase the value of counter by 1.
+done #We're at the bottom of the loop so go back to line 5 and perform the test again.
+
+echo ALL done 
+
+-Until loop
+
+counter=1
+until [ $counter -gt 10 ]
+do
+    echo $counter
+    ((counter++))
+done
+
+echo All done
+
+-For loop 
+
+names='Stan Kyle Cartman' #Create a simple list which is a series of names.
+
+for name in $names #For each of the items in the list $names assign the item to the variable $name and do the following commands.
+do
+    echo $name
+done
+
+echo All done
+
 ```
 -Controlling loops 
 Breaks and continue (some files may not have access to read, so continue on to next. Sometimes the disk space get's below a certain level, so it stops/breaks)
