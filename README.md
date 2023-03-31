@@ -174,24 +174,22 @@ echo ${assoc_array[@]} #will print all the elements stored in the assoc array.
 
 17 What is a conditional statement in programming? Provide an example of each in the shell of your liking. 
 
-Using C++ syntax  
-if (myDay == " Sunny")
-    {
-      // Decision
-      Console.WriteLine("Read in the Library");
-    }
-    // 2nd condition
-    else if (myday == "Raining")
-    {
-      //decision
-      Console.WriteLine("Read at Home")
-    }
-    // 3rd condition
-    else if (MyDay == "Cloudy")
-    {
-      // Decision
-      Console.WriteLine("Read in the Garden")
-    }
+```
+
+Using bash syntax 
+echo "enter the first number"
+read num1
+
+echo "enter the second number"
+read num2
+
+if [ $num1 -eq $num2 ]; then
+        echo "the numbers match"
+else
+        echo "the number do NOT match"
+fi
+
+```
 
 18 What is a loop in programming? Provide an example of each in the shell of your liking. 
 
