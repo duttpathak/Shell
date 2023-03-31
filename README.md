@@ -127,9 +127,9 @@ echo "Welcome ${my_var}!"
 
 14 What are command line arguments in a shell?
 
-```
-
 Command-line arguments are parameters that are passed to a script while executing them in the bash shell. 
+
+```
 
 bash script 
 echo "Script Name: $0"
