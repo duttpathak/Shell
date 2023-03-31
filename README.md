@@ -129,18 +129,41 @@ echo "Welcome ${my_var}!"
 
 Command-line arguments are parameters that are passed to a script while executing them in the bash shell. 
 
-provide example
+````
+bash script 
+echo "Script Name: $0"
+echo "First Parameter of the script is $1"
+echo "The second Parameter is $2"
+echo "The complete list of arguments is $@"
+echo "Total Number of Parameters: $#"
+echo "The process ID is $$"
+echo "Exit code for the script: $?"
+
+Output
+
+Script Name: ./command_line_arg.zsh
+First Parameter of the script is 
+The second Parameter is 
+The complete list of arguments is 
+Total Number of Parameters: 0
+The process ID is 2702
+Exit code for the script: 0
+
+```
+
 
 15 What is a weakly typed language? Does bash fall under this category?
 
 Weakly typed languages have variables that are less tightly coupled to a specific type. variables can be implicitly converted to other data types to permit particular operations which otherwise can not happen. Bash is strong typed language. JavaScript is weakly typed language. 
+
+```
 
 var intNumbers = 123
 var textNumbers = "one two three"
  intNumbers + textNumbers
  "123one two three"
 
- reword
+```
 
 16 How can you declare and access an array variable in a shell?
 
