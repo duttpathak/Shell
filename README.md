@@ -166,9 +166,6 @@ index_array=(1 2 3 4 5 6)
 echo ${index_array[0]}
 
 
-
-indexed_array[0]=value
-index_array=(1 2 3 4 5 6)
 echo ${index_array[0]} #will print individual elements.
 echo ${index_array[@]} #will print all the elements stored in the index array.
 echo ${assoc_array[@]} #will print all the elements stored in the assoc array. 
