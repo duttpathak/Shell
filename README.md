@@ -127,9 +127,10 @@ echo "Welcome ${my_var}!"
 
 14 What are command line arguments in a shell?
 
+```
+
 Command-line arguments are parameters that are passed to a script while executing them in the bash shell. 
 
-````
 bash script 
 echo "Script Name: $0"
 echo "First Parameter of the script is $1"
@@ -154,7 +155,7 @@ Exit code for the script: 0
 
 15 What is a weakly typed language? Does bash fall under this category?
 
-Weakly typed languages have variables that are less tightly coupled to a specific type. variables can be implicitly converted to other data types to permit particular operations which otherwise can not happen. Bash is strong typed language. JavaScript is weakly typed language. 
+A weakly typed language has looser typing rules and may produce unpredictable or even enourmous results or may perform implicit type conversion at runtime. Bash is strong typed language. JavaScript is weakly typed language. 
 
 ```
 
