@@ -307,6 +307,26 @@ fi
 
 21 How can a shell script be terminated? Forcely exit  
 
+```
+
+#!/bin/bash
+
+while true; do
+
+echo "enter some text"
+read text
+
+if [[ -n $text ]]; then
+        echo "you entered: $text"
+        exit 0
+else
+        echo "you didn't enter anything!"
+fi
+
+done
+
+```
+
 22 How can you make a shell script executable?
 
 chmod +x <filename.sh>
@@ -358,10 +378,10 @@ Environment variable is a variable whose value is set outside the program, typic
 28 Write a shell script to print the HOME environment variable. 
 
 ```
-create a file using vscode (directory.zsh)
-Start the script with #! /bin/zsh
-Write some code 
-Save the script file as filename.zsh
+#create a file using vscode (directory.zsh)
+#Start the script with #! /bin/zsh
+#Write some code 
+#Save the script file as filename.zsh
 
 echo $HOME
 
@@ -372,6 +392,11 @@ echo $HOME
 #!/bin/bash
 
 ```
+
+function DEBUG()
+{
+ [ "$_DEBUG" == "on" ] &&  $@
+}
 
 
 
