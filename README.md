@@ -352,9 +352,8 @@ echo "Length of the string is : $n "
 
 27 What is an environment variable? How can you declare one?
 
-variables and constants 
 
-Environmental variables are dynamic values which affect thte processes or programs on a computer. They exist in every operating system, but types may vary. Environment variables can be created, edited, saved, and deleted and give information about the system behavior. 
+Environment variable is a variable whose value is set outside the program, typically through functionality build into the OS or microservice. Environment variable is made up of a name/value pair, and any number may be created and available for reference at a point in time. 
 
 28 Write a shell script to print the HOME environment variable. 
 
