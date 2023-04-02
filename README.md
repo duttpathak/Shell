@@ -393,7 +393,6 @@ echo $HOME
 
 29 How can you debug (or troubleshoot) a problem with a shell script?
 
-#!/bin/bash
 
 ```
 
