@@ -368,7 +368,11 @@ echo "Length of the string is : $n "
 
 26 How can you run multiple shell scripts in parallel?
 
+```
+
 ./script1.sh && ./script2.sh 
+
+```
 
 27 What is an environment variable? How can you declare one?
 
