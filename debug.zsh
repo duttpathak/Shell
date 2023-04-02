@@ -1,10 +1,11 @@
 #! /bin/zsh
 
-set -x       #Enabling the Debugging
-echo "foo"
-set +x       #Disabling the Debugging
+#!/bin/sh
+set -x
+echo "Your home is : $HOME"
+set +x
 
-echo "bar"
+
 
 # _DEBUG="on"
 # function DEBUG()
