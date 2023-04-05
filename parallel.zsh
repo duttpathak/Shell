@@ -1,3 +1,1 @@
-debug.zsh &
-directory.zsh &
-env_home_var.zsh &
+./debug.zsh && ./directory.zsh && ./env_home_var.zsh 

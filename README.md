@@ -308,28 +308,25 @@ fi
 21 How can a shell script be terminated? Forcely exit  
 
 ```
-
 #!/bin/bash
 
-while true; do
-
-echo "enter some text"
+echo "enter a value"
 read text
-
 if [[ -n $text ]]; then
-        echo "you entered: $text"
-        exit 0
+    echo "you entered: $text"
+    exit 0
 else
-        echo "you didn't enter anything!"
+    echo "you didn't enter anything!"
+    exit 127
 fi
-
-done
-
 ```
+good
 
 22 How can you make a shell script executable?
 
-chmod +x <filename.sh>
+chmod +x <filename>
+
+good
 
 
 23 Describe five different file options. E.g., “-L“ checks if a file exists and is a symbolic link.
@@ -340,11 +337,12 @@ chmod +x <filename.sh>
 
 -f: Returns True if the file exists as a common (regular) file. 
 -d: Returns True if directory exists. 
--e: Returns True if any type of file exists. 
+-e: Returns True if any type of file exists, even if a directory is passed, it returns true if the directory exists.. 
 -c: Returns True if the character file exists. 
 -r: Returns True if a readable file exists. 
 
 ```
+
 
 24 How can you print a particular line inside an existing file in the shell?
 
@@ -358,6 +356,8 @@ sed -n '10p' file.txt
 
 ```
 
+good
+
 25 How can you find the length of a string in the shell?
 
 ```
@@ -366,7 +366,11 @@ n=${#str}
 echo "Length of the string is : $n "
 ```
 
-26 How can you run multiple shell scripts in parallel?
+good
+
+Skip 26 How can you run multiple shell scripts in parallel?
+
+If an additiaonl tool is required do not use. Parallel don't use parallel 
 
 ```
 
@@ -374,22 +378,29 @@ echo "Length of the string is : $n "
 
 ```
 
+revise
+
 27 What is an environment variable? How can you declare one?
 
 
-Environment variable is a variable whose value is set outside the program, typically through functionality build into the OS or microservice. Environment variable is made up of a name/value pair, and any number may be created and available for reference at a point in time. 
+Environment variable is made up of a name/value pair, and any number may be created and available for reference at a point in time. 
+
+good
 
 28 Write a shell script to print the HOME environment variable. 
 
 ```
 #create a file using vscode (directory.zsh)
-#Start the script with #! /bin/zsh
+#Start the script with #!/bin/zsh
 #Write some code 
 #Save the script file as filename.zsh
 
+#!/bin/zsh
 echo $HOME
 
 ```
+
+good 
 
 29 How can you debug (or troubleshoot) a problem with a shell script?
 
@@ -401,12 +412,14 @@ set -x
 echo "Your home is : $HOME"
 set +x
 
-
 ```
+good
 
 30 What is the purpose of the exit status of a shell command?
 
 Exit status is an integer number. 0 exit status means the command was successful without any errors. A non-zero (1-255 values) exit status means command was a failure. 
+
+good
 
 31 Write a shell script to print the exit status of a command. 
 
@@ -416,6 +429,8 @@ Exit status is an integer number. 0 exit status means the command was successful
 echo $?
 
 ```
+
+good
 
 Process is anything executing at a given time 
 CPU, storage, memory, Unix and linux
